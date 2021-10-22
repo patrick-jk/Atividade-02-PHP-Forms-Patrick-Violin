@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <p>Exemplo de Formulário</p>
+    <br>
+    <p>O que você achou do site?</p> <br>
+    <form name="cadastro" method="post" action="envio_form.php">
+        <input type="radio" name="experiencia_site">
+        <label for="muito_bom">Muito Bom</label>
+        <input type="radio">
+        <label for="bom">Bom</label>
+        <input type="radio">
+        <label for="regular">Regular</label>
+        <input type="radio">
+        <label for="pessimo">Um Lixo</label> 
+        <br><br>
+        <p>Qual a seção que você mais gostou?</p><br>
+        <select name="webiste_secao_preferida">
+            <option>Em Cartaz</option>
+            <option>Trilha Sonora</option>
+            <option>Galeria de Fotos</option>
+            <option>Bilheteria</option>
+            <option>Outra</option>
+        </select>
+        Outra: <input type="text"> <br><br>
+
+        <p>Digite seus comentários no espaço abaixo:</p> <br>
+        <textarea name="comentarios_site" cols="50" rows="8"></textarea> <br>
+
+        <br><p>Diga-nos como entrar em contato com você</p> <br>
+        Nome &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nome_contato"> <br>
+        E-mail &nbsp;&nbsp;&nbsp;<input type="text" name="email_contato"> <br>
+        Fone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="telefone_contato"> <br>
+        FAX  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fax_contato"> <br><br>
+
+        <input type="checkbox" name="novidades_email"> Quero receber as novidades do site por e-mail <br>
+        <br><input type="submit" name="ENVIAR">
+    </form>
+</body>
+</html>
